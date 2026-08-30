@@ -111,6 +111,8 @@ export interface Task {
   platform_fee_cents: number;
   doer_payout_cents: number;
   tip_cents: number;
+  promo_code: string | null;
+  discount_cents: number;
   currency: string;
   requires_photo_proof: boolean;
   completion_photo_url: string | null;
