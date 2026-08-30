@@ -60,6 +60,9 @@ export async function Nav() {
               <Link href="/profile" className="hidden text-neutral-600 hover:text-neutral-900 sm:inline">
                 Profile
               </Link>
+              <Link href="/support" className="text-neutral-600 hover:text-neutral-900">
+                Support
+              </Link>
               <NotificationBell userId={user.id} initialNotifications={notifications} />
               <form action={signOut}>
                 <button className="rounded-lg border border-neutral-300 px-3 py-1.5 text-neutral-700 hover:bg-neutral-50">
