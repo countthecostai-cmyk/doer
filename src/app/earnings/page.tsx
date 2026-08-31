@@ -64,7 +64,7 @@ export default async function EarningsPage() {
         <div className="rounded-lg border border-neutral-200 bg-white p-4">
           <p className="text-xs text-neutral-500">Pending</p>
           <p className="mt-1 text-xl font-semibold text-neutral-900">{formatCents(totalPendingCents)}</p>
-          <p className="mt-0.5 text-[11px] text-neutral-400">Awaiting Requester confirmation & payment</p>
+          <p className="mt-0.5 text-[11px] text-neutral-500">Awaiting Requester confirmation & payment</p>
         </div>
       </section>
 
@@ -113,7 +113,7 @@ export default async function EarningsPage() {
               <li key={r.id} className="rounded-lg border border-neutral-200 bg-white p-4 text-sm">
                 <div className="flex items-center justify-between">
                   <span className="font-medium text-neutral-900">{"⭐".repeat(r.rating)}</span>
-                  <span className="text-xs text-neutral-400">{new Date(r.created_at).toLocaleDateString()}</span>
+                  <span className="text-xs text-neutral-500">{new Date(r.created_at).toLocaleDateString()}</span>
                 </div>
                 {r.tasks?.title && <p className="mt-1 text-xs text-neutral-500">{r.tasks.title}</p>}
                 {r.comment && <p className="mt-2 text-neutral-700">{r.comment}</p>}

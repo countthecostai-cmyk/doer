@@ -53,7 +53,7 @@ export function PoolList({ tasks }: { tasks: TaskWithType[] }) {
             <div className="min-w-0">
               <p className="truncate font-medium text-neutral-900">{task.task_types?.name ?? task.title}</p>
               <p className="truncate text-sm text-neutral-500">{task.address}</p>
-              <p className="text-xs text-neutral-400">{STATUS_LABELS[task.status]}</p>
+              <p className="text-xs text-neutral-500">{STATUS_LABELS[task.status]}</p>
             </div>
             <div className="shrink-0 text-right">
               <p className="text-sm font-medium text-neutral-900">

@@ -86,7 +86,7 @@ export default async function ProfilePage() {
                 : "Not started"
           }
         />
-        <p className="px-1 text-xs text-neutral-400">
+        <p className="px-1 text-xs text-neutral-500">
           Verification status is set by Done and can&apos;t be edited here.
         </p>
       </div>

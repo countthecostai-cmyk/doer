@@ -139,7 +139,7 @@ export default async function TaskDetailPage({
       )}
 
       {task.requires_photo_proof && (
-        <p className="text-xs text-neutral-400">This task requires a completion photo before it can be marked done.</p>
+        <p className="text-xs text-neutral-500">This task requires a completion photo before it can be marked done.</p>
       )}
 
       {photoUrl && (
