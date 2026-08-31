@@ -2,10 +2,26 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://doer.done.app";
+const title = "Done Doer — Find work nearby";
+const description =
+  "The Doer app for Done, a local on-demand task marketplace. Browse open tasks, claim jobs, and get paid.";
+
 export const metadata: Metadata = {
-  title: "Done Doer — Find work nearby",
-  description:
-    "The Doer app for Done, a local on-demand task marketplace. Browse open tasks, claim jobs, and get paid.",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    siteName: "Done Doer",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({
