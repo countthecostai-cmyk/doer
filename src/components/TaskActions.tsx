@@ -125,7 +125,7 @@ function CompleteForm({
         </label>
         <textarea id="note" name="note" rows={2} className="mt-1 w-full rounded-lg border border-neutral-300 px-3 py-2 text-sm" />
       </div>
-      {state?.error && <p className="text-sm text-red-600">{state.error}</p>}
+      {state?.error && <p role="alert" className="text-sm text-red-600">{state.error}</p>}
       <button
         type="submit"
         disabled={pending}
@@ -164,7 +164,7 @@ function CancelForm({ taskId }: { taskId: string }) {
         placeholder="Reason (optional)"
         className="w-full rounded-lg border border-neutral-300 px-3 py-2 text-sm"
       />
-      {state?.error && <p className="text-sm text-red-600">{state.error}</p>}
+      {state?.error && <p role="alert" className="text-sm text-red-600">{state.error}</p>}
       <div className="flex gap-2">
         <button
           type="submit"

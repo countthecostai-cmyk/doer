@@ -28,7 +28,7 @@ export function AvailabilityToggle({ initial }: { initial: boolean }) {
         <p className="text-xs text-neutral-500">
           For your reference only — every open task stays visible to you either way.
         </p>
-        {error && <p className="mt-1 text-xs text-red-600">{error}</p>}
+        {error && <p role="alert" className="mt-1 text-xs text-red-600">{error}</p>}
       </div>
       <button
         type="button"
